@@ -32,7 +32,7 @@ ros2 topic pub /turret_controller/joint_trajectory trajectory_msgs/msg/JointTraj
 
 Change controller
 ```
-ros2 control ros2 control switch_controllers --deactivate turret_controller --activate turret_velocity_controller 
+ros2 control switch_controllers --deactivate turret_controller --activate turret_velocity_controller 
 ```
 
 Try publish velocity
