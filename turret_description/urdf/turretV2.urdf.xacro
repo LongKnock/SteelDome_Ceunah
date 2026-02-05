@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?> -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="turret_description">
 
   <xacro:property name="PI" value="3.1415926535897931"/>
@@ -139,9 +139,9 @@
     </material>
   </gazebo>
 
-<!-- <gazebo>
+<gazebo>
   <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-    <parameters>/home/orto03/SteelDome_ROS_WS/install/turret_simulation/share/turret_simulation/config/turret_controllers.yaml</parameters>
+    <parameters>$(find turret_simulation)/config/turret_controllers.yaml</parameters>
     <ros>
       <remapping>robot_description:=robot_description</remapping>
     </ros>
@@ -154,12 +154,16 @@
   </hardware>
   <joint name="Horizontal_Joint">
     <command_interface name="position"/>
+    <command_interface name="velocity"/>
     <state_interface name="position"/>
+    <state_interface name="velocity"/>
     </joint>
   <joint name="Vertical_Joint">
     <command_interface name="position"/>
+    <command_interface name="velocity"/>
     <state_interface name="position"/>
+    <state_interface name="velocity"/>
     </joint>
-</ros2_control> -->
+</ros2_control>
 
 </robot>
