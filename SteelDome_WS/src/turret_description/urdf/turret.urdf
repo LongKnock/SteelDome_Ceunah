@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="turret_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.019211 0.0012501 0.013952"
+        rpy="0 0 0" />
+      <mass
+        value="0.28603" />
+      <inertia
+        ixx="0.00013769"
+        ixy="6.0697E-20"
+        ixz="-5.3662E-19"
+        iyy="0.00022916"
+        iyz="-1.8973E-21"
+        izz="0.00013769" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.52941 0.54902 0.54902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Pan_Link">
+    <inertial>
+      <origin
+        xyz="0.012769 -0.018593 0.024015"
+        rpy="0 0 0" />
+      <mass
+        value="0.059322" />
+      <inertia
+        ixx="4.5266E-06"
+        ixy="1.8014E-07"
+        ixz="7.4286E-07"
+        iyy="4.7775E-06"
+        iyz="-3.8789E-07"
+        izz="3.5927E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/Pan_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.52941 0.54902 0.54902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/Pan_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Horizontal_Joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Pan_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="3.14" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="Moncong_Link">
+    <inertial>
+      <origin
+        xyz="0.0045322 0.068473 0.014292"
+        rpy="0 0 0" />
+      <mass
+        value="0.664" />
+      <inertia
+        ixx="0.00048793"
+        ixy="-0.00021746"
+        ixz="-0.00034251"
+        iyy="0.0010507"
+        iyz="-0.00011355"
+        izz="0.00096503" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/Moncong_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.52941 0.54902 0.54902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/Moncong_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Vertical_Joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Pan_Link" />
+    <child
+      link="Moncong_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.28"
+      upper="3.14"
+      effort="100"
+      velocity="3.14" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+</robot>

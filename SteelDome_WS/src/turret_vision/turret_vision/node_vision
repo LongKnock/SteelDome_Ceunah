@@ -1,0 +1,39 @@
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
+import cv2
+import os
+
+from vision_msgs.msg import Detection2DArray, Detection2D, ObjectHypothesisWithPose
+
+class VisionNode(Node):
+    def __init__(self):
+        super().__init__('vision_node')
+
+        self.declare_parameter('backend', 'cpu') # Choose backend
+        self.declare_parameter('model_path', 'yolov8n.onnx') # Path to ONNX model or PT file
+        self.declare_parameter('confidence_threshold', 0.5) # confidance threshold for detections
+        self.declare_parameter('iou_threshold', 0.45)
+        self.declare_parameter('draw_labels', True)
+        self.declare_parameter('debug_mode', True)
+
+        backend_name = self.get_parameter('backend').value
+        model_path = self.get_parameter('model_path').value
+        self.confidence_threshold = self.get_parameter('confidence_threshold').value
+        self.iou_thresh = self.get_parameter('iou_threshold').value
+        self.draw_labels = self.get_parameter('draw_labels').value
+        self.debug = self.get_parameter('debug_mode').value
+
+        self.get_logger().info(f"Using backend: {backend_name.upper()} with model: {model_path}")
+
+        if backend_name == 'cuda':
+            from turret_vision.backends.cuda_backend import CUDABackend
+            self.detector = CUDABackend(model_path)
+        # elif backend_name == 'hailo':
+        #     # Placeholder for Pi 5
+        #     from turret_vision.backends.hailo_backend import HailoBackend 
+        #     self.detector = HailoBackend(model_path)
+        else:
+            from turret_vision.backends.cpu_backend import CPUBackend
+            self.detector = CPUBackend(model_path)

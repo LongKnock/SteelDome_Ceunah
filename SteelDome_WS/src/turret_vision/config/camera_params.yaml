@@ -1,0 +1,14 @@
+vision_node:
+  ros__parameters:
+    # Topics
+    # camera_topic: "/turret/camera/image_raw"
+    # detection_topic: "/turret/vision/detections"
+    
+    # Model Settings
+    model_path: "yolov8n.onnx"  # Default model to load
+    confidence_threshold: 0.5       # Ignore detections below 50%
+    iou_threshold: 0.45             # Intersection Over Union (for NMS)
+    
+    # Visualization
+    debug_mode: true                # Show the OpenCV window
+    draw_labels: true               # Draw text names on boxes

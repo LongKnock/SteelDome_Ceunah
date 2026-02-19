@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="turret_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.059907 1.301E-17 0.022839"
+        rpy="0 0 0" />
+      <mass
+        value="0.28603" />
+      <inertia
+        ixx="0.00013769"
+        ixy="-5.3945E-19"
+        ixz="-3.2506E-21"
+        iyy="0.00013769"
+        iyz="5.6125E-20"
+        izz="0.00022916" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.52941 0.54902 0.54902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Horizontal_Link">
+    <inertial>
+      <origin
+        xyz="-0.0013345 1.7795E-05 0.0067059"
+        rpy="0 0 0" />
+      <mass
+        value="0.059322" />
+      <inertia
+        ixx="4.4326E-06"
+        ixy="5.8533E-09"
+        ixz="8.3795E-07"
+        iyy="4.8715E-06"
+        iyz="-1.1174E-08"
+        izz="3.5927E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/Horizontal_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.52941 0.54902 0.54902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/Horizontal_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Horizontal_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.059907 0 0.038897"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Horizontal_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="3.14" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="Vertical_Link">
+    <inertial>
+      <origin
+        xyz="0.013867 0.027537 -1.0361E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.664" />
+      <inertia
+        ixx="0.00023872"
+        ixy="5.5153E-05"
+        ixz="-3.4476E-11"
+        iyy="0.0011211"
+        iyz="-5.0832E-12"
+        izz="0.0011439" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/Vertical_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.52941 0.54902 0.54902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://turret_description/meshes/Vertical_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Vertical_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.014074 0.00018767 0.020525"
+      rpy="1.5708 0 -0.013334" />
+    <parent
+      link="Horizontal_Link" />
+    <child
+      link="Vertical_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.262"
+      upper="0.785"
+      effort="100"
+      velocity="3.14" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+</robot>
