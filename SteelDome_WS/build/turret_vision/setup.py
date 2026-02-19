@@ -1,1 +1,0 @@
-/home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/src/turret_vision/setup.py
