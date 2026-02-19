@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+config/turret_controllers.yaml
+launch/gazebo_launch.py
+resource/turret_simulation
+turret_simulation/__init__.py
+turret_simulation.egg-info/PKG-INFO
+turret_simulation.egg-info/SOURCES.txt
+turret_simulation.egg-info/dependency_links.txt
+turret_simulation.egg-info/entry_points.txt
+turret_simulation.egg-info/requires.txt
+turret_simulation.egg-info/top_level.txt
+turret_simulation.egg-info/zip-safe
+world/arena.world

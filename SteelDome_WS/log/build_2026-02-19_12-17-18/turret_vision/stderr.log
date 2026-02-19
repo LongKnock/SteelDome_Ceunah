@@ -1,0 +1,1 @@
+error: [Errno 17] File exists: '/home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/build/turret_vision/resource/turret_vision' -> '/home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/install/turret_vision/share/ament_index/resource_index/packages/turret_vision'

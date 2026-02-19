@@ -1,0 +1,17 @@
+[0.830s] Invoking command in '/home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/build/turret_vision': PYTHONPATH=/home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/build/turret_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/install/turret_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/build/turret_vision/build --no-deps symlink_data
+[0.987s] running develop
+[1.091s] running egg_info
+[1.091s] writing turret_vision.egg-info/PKG-INFO
+[1.092s] writing dependency_links to turret_vision.egg-info/dependency_links.txt
+[1.092s] writing entry points to turret_vision.egg-info/entry_points.txt
+[1.092s] writing requirements to turret_vision.egg-info/requires.txt
+[1.092s] writing top-level names to turret_vision.egg-info/top_level.txt
+[1.093s] reading manifest file 'turret_vision.egg-info/SOURCES.txt'
+[1.094s] writing manifest file 'turret_vision.egg-info/SOURCES.txt'
+[1.095s] running build_ext
+[1.095s] Creating /home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/install/turret_vision/lib/python3.10/site-packages/turret-vision.egg-link (link to .)
+[1.095s] 
+[1.095s] Installed /home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/build/turret_vision
+[1.095s] running symlink_data
+[1.096s] symbolically linking /home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/build/turret_vision/resource/turret_vision -> /home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/install/turret_vision/share/ament_index/resource_index/packages
+[1.096s] error: [Errno 17] File exists: '/home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/build/turret_vision/resource/turret_vision' -> '/home/orto03/ROS_Workspace/SteelDome_Project/SteelDome_WS/install/turret_vision/share/ament_index/resource_index/packages/turret_vision'

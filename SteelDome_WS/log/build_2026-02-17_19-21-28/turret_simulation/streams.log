@@ -1,0 +1,29 @@
+[0.799s] Invoking command in '/home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation': PYTHONPATH=/home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation/build --no-deps symlink_data
+[0.962s] running develop
+[1.088s] running egg_info
+[1.088s] creating turret_simulation.egg-info
+[1.089s] writing turret_simulation.egg-info/PKG-INFO
+[1.089s] writing dependency_links to turret_simulation.egg-info/dependency_links.txt
+[1.091s] writing entry points to turret_simulation.egg-info/entry_points.txt
+[1.091s] writing requirements to turret_simulation.egg-info/requires.txt
+[1.091s] writing top-level names to turret_simulation.egg-info/top_level.txt
+[1.091s] writing manifest file 'turret_simulation.egg-info/SOURCES.txt'
+[1.092s] reading manifest file 'turret_simulation.egg-info/SOURCES.txt'
+[1.092s] writing manifest file 'turret_simulation.egg-info/SOURCES.txt'
+[1.093s] running build_ext
+[1.094s] Creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/lib/python3.10/site-packages/turret-simulation.egg-link (link to .)
+[1.094s] 
+[1.095s] Installed /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation
+[1.095s] running symlink_data
+[1.095s] creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/share/ament_index
+[1.095s] creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/share/ament_index/resource_index
+[1.095s] creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/share/ament_index/resource_index/packages
+[1.095s] symbolically linking /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation/resource/turret_simulation -> /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/share/ament_index/resource_index/packages
+[1.095s] symbolically linking /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation/package.xml -> /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/share/turret_simulation
+[1.095s] creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/share/turret_simulation/launch
+[1.095s] symbolically linking /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation/launch/gazebo_launch.py -> /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/share/turret_simulation/launch
+[1.095s] creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/share/turret_simulation/world
+[1.095s] symbolically linking /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation/world/arena.world -> /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/share/turret_simulation/world
+[1.095s] creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/share/turret_simulation/config
+[1.095s] symbolically linking /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation/config/turret_controllers.yaml -> /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/share/turret_simulation/config
+[1.121s] Invoked command in '/home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation' returned '0': PYTHONPATH=/home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orto03/ROS_Workspace/SteelDome_WS/install/turret_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_simulation/build --no-deps symlink_data

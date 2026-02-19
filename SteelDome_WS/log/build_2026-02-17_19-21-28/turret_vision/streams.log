@@ -1,0 +1,27 @@
+[0.801s] Invoking command in '/home/orto03/ROS_Workspace/SteelDome_WS/build/turret_vision': PYTHONPATH=/home/orto03/ROS_Workspace/SteelDome_WS/build/turret_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_vision/build --no-deps symlink_data
+[1.029s] running develop
+[1.144s] running egg_info
+[1.144s] creating turret_vision.egg-info
+[1.144s] writing turret_vision.egg-info/PKG-INFO
+[1.145s] writing dependency_links to turret_vision.egg-info/dependency_links.txt
+[1.145s] writing entry points to turret_vision.egg-info/entry_points.txt
+[1.145s] writing requirements to turret_vision.egg-info/requires.txt
+[1.145s] writing top-level names to turret_vision.egg-info/top_level.txt
+[1.145s] writing manifest file 'turret_vision.egg-info/SOURCES.txt'
+[1.146s] reading manifest file 'turret_vision.egg-info/SOURCES.txt'
+[1.146s] writing manifest file 'turret_vision.egg-info/SOURCES.txt'
+[1.147s] running build_ext
+[1.147s] Creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/lib/python3.10/site-packages/turret-vision.egg-link (link to .)
+[1.148s] 
+[1.148s] Installed /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_vision
+[1.148s] running symlink_data
+[1.148s] creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/share/ament_index
+[1.148s] creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/share/ament_index/resource_index
+[1.148s] creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/share/ament_index/resource_index/packages
+[1.148s] symbolically linking /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_vision/resource/turret_vision -> /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/share/ament_index/resource_index/packages
+[1.148s] symbolically linking /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_vision/package.xml -> /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/share/turret_vision
+[1.148s] creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/share/turret_vision/launch
+[1.148s] creating /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/share/turret_vision/config
+[1.148s] symbolically linking /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_vision/config/labels.txt -> /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/share/turret_vision/config
+[1.149s] symbolically linking /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_vision/config/camera_params.yaml -> /home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/share/turret_vision/config
+[1.167s] Invoked command in '/home/orto03/ROS_Workspace/SteelDome_WS/build/turret_vision' returned '0': PYTHONPATH=/home/orto03/ROS_Workspace/SteelDome_WS/build/turret_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/orto03/ROS_Workspace/SteelDome_WS/install/turret_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/orto03/ROS_Workspace/SteelDome_WS/build/turret_vision/build --no-deps symlink_data
